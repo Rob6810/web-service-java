@@ -10,7 +10,7 @@ node{
         git credentialsId: 'robertoGHCOM', url: 'https://github.com/Rob6810/web-service-java.git'
         
         //Creamos una carpeta donde almacenaremos lo que vayamos a incluir en el repositorio para que Openshift utilice ese código
-        sh "mkdir clon"
+        //sh "mkdir clon"
         dir('clon/'){
             //Añadimos el repositorio para poder realizar un push con los archivos
             sh "git remote add destination https://roberto-estevanez-externo:b8981e3cd24ead31fdcfb6d28f7caa4d853a8fa8@github.axa.com/roberto-estevanez-externo/prueba.git"
