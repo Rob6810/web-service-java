@@ -23,6 +23,7 @@ node{
         //Copiamos los archivos que se han generado en la carpeta creada anteriormente
         echo(pwd())
         dir('clon/'){
+            sh "ls -lah"
             //Añadimos los archivos al repositorio 
             sh "git add ."
             sh "git commit -m 'Jenkins'"
