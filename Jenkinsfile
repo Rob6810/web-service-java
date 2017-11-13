@@ -19,6 +19,7 @@ node{
     
     stage ('Push git-hub'){
         //Copiamos los archivos que se han generado en la carpeta creada anteriormente
+        echo(pwd())
         dir('clon/'){
             //Añadimos los archivos al repositorio 
             sh "git add ."
